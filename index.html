@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script type="text/javascript" src='app.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		body {
+			font-family: 'Noto Sans', sans-serif;
+		}
+		header {
+			font-size: 36px;
+			color: #0352cc;
+			text-align: center;
+			margin-top: 50px;
+		}
+		#questionNumber {
+			margin-top: 120px;
+			height: 40px;
+			margin-left: 25%;
+			margin-right: 64%;
+			border: 1px solid #0352cc;
+			box-sizing: border-box;
+			padding: 8px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			background-color: #0352cc;
+			color: #FFFFFF;
+		}
+		#content {
+			height: 450px;
+			margin-left: 25%;
+			margin-right: 25%;
+			padding: 15px; 
+			border: 2px solid #0352cc;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px; 
+			box-shadow: 4px 4px 4px 4px #888888;
+		}
+		#question {
+			font-size: 26px;
+			height: 100px;
+			/* border: 1px solid #000000; */
+			margin-bottom: 16px;
+		}
+		#options {
+			font-size: 24px;
+			height: 186px;
+			/* border: 1px solid #000000; */
+			margin-bottom: 50px;
+		}
+		input[type="radio"]{
+ 			margin: 12px 10px;
+		}
+		#nextprevious {
+			height: 80px;
+			/* border: 1px solid #000000; */
+		}
+		.buttn {
+			font-size: 26px;
+			margin: 20px 160px 20px 100px;
+			height: 46px;
+			width: 120px;
+			border: 1px solid #0352cc;
+			outline: 0;
+			background-color: #0352cc;
+			border-radius: 5px;
+			color: #FFFFFF
+		}
+		.buttn:hover {
+			color: #0352cc;
+			background-color: #FFFFFF;
+			cursor: pointer;
+		}
+		
+	</style>
+</head>
+<body onload="presentValues()">
+	<header>Welcome to the world of quiz !!!</header>
+	<div id="questionNumber"></div>
+	<div id="content">
+		<div id="question">
+			
+		</div>
+		<div id="options">
+			<input type="radio" name='foo' checked /><span id="option1"></span><br>
+			<input type="radio" name='foo' /><span id="option2"></span><br>
+			<input type="radio" name='foo' /><span id="option3"></span><br>
+			<input type="radio" name='foo' /><span id="option4"></span><br>
+		</div>
+		<div id="nextprevious">
+			<button id="prev" class="buttn" onclick="previous()"><i class="fa fa-arrow-circle-left"></i></button>
+			<button id="nex" class="buttn" onclick="next()"><i class="fa fa-arrow-circle-right"></i></button>
+		</div>
+	</div>
+</body>
+</html>
