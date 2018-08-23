@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Quiz App</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<script type="text/javascript" src='app.js'></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 		body {
 			font-family: 'Noto Sans', sans-serif;
@@ -59,7 +59,18 @@
 			height: 80px;
 			/* border: 1px solid #000000; */
 		}
-		.buttn {
+		#prev {
+			font-size: 26px;
+			margin: 20px 160px 20px 100px;
+			height: 46px;
+			width: 120px;
+			border: 1px solid #D3D3D3;
+			outline: 0;
+			background-color: #D3D3D3;
+			border-radius: 5px;
+			color: #FFFFFF;
+		}
+		#nex {
 			font-size: 26px;
 			margin: 20px 160px 20px 100px;
 			height: 46px;
@@ -70,12 +81,11 @@
 			border-radius: 5px;
 			color: #FFFFFF
 		}
-		.buttn:hover {
+		#nex:hover {
 			color: #0352cc;
 			background-color: #FFFFFF;
 			cursor: pointer;
 		}
-		
 	</style>
 </head>
 <body onload="presentValues()">
