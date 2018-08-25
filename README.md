@@ -8,9 +8,9 @@ Done
 
 Previous and next links at the end of each question.
 
-To be done: 
-
 previous is non-clickable at the beginning and next is non-clickable at the end.
+
+To be done: 
 
 The next link should be made clickable only on selecting an answer for a question.
 
