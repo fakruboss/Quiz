@@ -23,3 +23,5 @@ Login (logged in member will be provided with options like add, edit, delete que
 Flag a question (view the flagged questions later)
 
 Move between questions using ‘switch questions’ pop-up. It should show the question number and marked option. the user can move between questions on clicking the question number. Separate column for the flagged questions. The user can navigate to Flagged questions on clicking the flag.
+
+add timer 
